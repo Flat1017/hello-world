@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello World</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f3ea;
+        --ink: #1f1b16;
+        --accent: #2f6bff;
+        --card: #ffffff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Georgia", "Times New Roman", serif;
+        background: radial-gradient(1200px 600px at 20% -10%, #ffe9c8 0%, transparent 55%),
+                    radial-gradient(900px 500px at 110% 10%, #d6e2ff 0%, transparent 45%),
+                    var(--bg);
+        color: var(--ink);
+      }
+      main {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 40px 20px;
+      }
+      .card {
+        max-width: 720px;
+        background: var(--card);
+        border: 2px solid #e3dccf;
+        border-radius: 18px;
+        padding: 36px 28px;
+        box-shadow: 0 18px 45px rgba(31, 27, 22, 0.12);
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(36px, 6vw, 56px);
+        letter-spacing: -0.02em;
+      }
+      p {
+        margin: 0 0 20px;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+      .badge {
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 999px;
+        border: 1px solid #d3cabd;
+        font-size: 14px;
+        background: #fff7ea;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      a:hover { text-decoration: underline; }
+      footer {
+        margin-top: 16px;
+        font-size: 14px;
+        color: #5c5145;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <span class="badge">My First Site</span>
+        <h1>Hello, World.</h1>
+        <p>
+          これは最初の一歩。ここから好きな文章やリンクを足していけば、
+          自分のサイトになっていきます。
+        </p>
+        <p>
+          次は「自己紹介」や「作りたいものリスト」を足してみよう。
+        </p>
+        <footer>
+          Made with GitHub Pages.
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
