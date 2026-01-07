@@ -2,38 +2,42 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-     <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Hello World</title>
     <style>
       :root {
         color-scheme: light;
-        --bg: #f7f3ea;
-        --ink: #1f1b16;
-        --accent: #2f6bff;
-        --card: #ffffff;
+        --bg: #0f1216;
+        --ink: #e6e8ee;
+        --muted: #a7aab4;
+        --accent: #5aa9ff;
+        --card: #151a21;
+        --border: #2a313b;
       }
       * { box-sizing: border-box; }
       body {
         margin: 0;
-        font-family: "Georgia", "Times New Roman", serif;
-        background: radial-gradient(1200px 600px at 20% -10%, #ffe9c8 0%, transparent 55%),
-                    radial-gradient(900px 500px at 110% 10%, #d6e2ff 0%, transparent 45%),
-                    var(--bg);
+        font-family: "IBM Plex Serif", "Georgia", "Times New Roman", serif;
+        background:
+          radial-gradient(900px 500px at 20% -10%, rgba(40, 85, 140, 0.35) 0%, transparent 55%),
+          radial-gradient(700px 420px at 110% 10%, rgba(95, 120, 160, 0.25) 0%, transparent 45%),
+          var(--bg);
         color: var(--ink);
       }
       main {
         min-height: 100vh;
         display: grid;
         place-items: center;
-        padding: 40px 20px;
+        padding: 56px 20px;
       }
       .card {
-        max-width: 720px;
+        max-width: 760px;
         background: var(--card);
-        border: 2px solid #e3dccf;
+        border: 1px solid var(--border);
         border-radius: 18px;
-        padding: 36px 28px;
-        box-shadow: 0 18px 45px rgba(31, 27, 22, 0.12);
+        padding: 38px 30px;
+        box-shadow: 0 18px 50px rgba(4, 6, 10, 0.45);
       }
       h1 {
         margin: 0 0 12px;
@@ -44,14 +48,18 @@
         margin: 0 0 20px;
         font-size: 18px;
         line-height: 1.7;
+        color: var(--muted);
       }
       .badge {
         display: inline-block;
         padding: 6px 12px;
         border-radius: 999px;
-        border: 1px solid #d3cabd;
-        font-size: 14px;
-        background: #fff7ea;
+        border: 1px solid var(--border);
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        background: #10141a;
       }
       a {
         color: var(--accent);
@@ -62,24 +70,24 @@
       footer {
         margin-top: 16px;
         font-size: 14px;
-        color: #5c5145;
+        color: var(--muted);
       }
     </style>
   </head>
   <body>
     <main>
       <section class="card">
-        <span class="badge">My First Site</span>
+        <span class="badge">First Project</span>
         <h1>Hello, World.</h1>
         <p>
-          これは最初の一歩。ここから好きな文章やリンクを足していけば、
-          自分のサイトになっていきます。
+          小さく始めて、少しずつ育てていく。いまはそれで十分。
         </p>
         <p>
-          次は「自己紹介」や「作りたいものリスト」を足してみよう。
+          このページは、あなたの練習ノートみたいなもの。
+          書き足すほど、自分の場所になっていく。
         </p>
         <footer>
-          Made with GitHub Pages.
+          Built on GitHub Pages.
         </footer>
       </section>
     </main>
